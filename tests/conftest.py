@@ -44,15 +44,6 @@ def setup_browser():
 
         driver.set_window_size(1920, 1080)
 
-        driver.execute_cdp_cmd(
-            "Page.addScriptToEvaluateOnNewDocument",
-            {
-                "source": """
-                window.localStorage.setItem('WELCOME_MODAL_DONT_SHOW', 'true');
-            """
-            },
-        )
-
         # Настройка Selene с созданным драйвером
         browser.config.driver = driver
         browser.config.timeout = 10
