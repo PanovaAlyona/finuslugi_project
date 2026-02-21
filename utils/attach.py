@@ -41,15 +41,11 @@ def add_html(driver):
 
 
 def add_video(driver):
-    video_url = (
-        f"https://selenoid.autotests.cloud/video/{driver.session_id}.mp4"
-    )
+    video_url = f"https://selenoid.autotests.cloud/video/{driver.session_id}.mp4"
 
     html = (
         "<html><body><video width='100%' height='100%' controls autoplay><source src='"
         + video_url
         + "' type='video/mp4'></video></body></html>"
     )
-    allure.attach(
-        html, "video_" + driver.session_id, AttachmentType.HTML, ".html"
-    )
+    allure.attach(html, "video_" + driver.session_id, AttachmentType.HTML, ".html")
