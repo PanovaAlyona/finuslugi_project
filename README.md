@@ -9,7 +9,6 @@
   <img src="media/icons/allure.png" width="50" title="Allure Report">
   <img src="media/icons/jenkins.png" width="50" title="Jenkins">
   <img src="media/icons/pycharm.png" width="50" title="PyCharm">
-  <img src="media/icons/tg.png" width="50" title="Telegram">
 </p>
 
 ## Описание
